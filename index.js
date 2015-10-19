@@ -27,7 +27,7 @@ module.exports = function (results, data, opts) {
 
     if (i === 0) {
       // start off the output with the filename
-      out.push(results.length + ' lint errors found in ' + result.file);
+      out.push('\n'+results.length + ' lint errors found in ' + result.file);
     }
 
     out.push('  [' + err.line + ',' + err.character + '](' + err.code + ') ' + err.reason);
